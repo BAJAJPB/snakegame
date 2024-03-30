@@ -1,0 +1,29 @@
+@import url("https://fonts.googleapis.com/css2?family=Anton&display=swap");
+.head{
+    background: linear-gradient(red,yellow);
+    border: .24vmin solid black;
+    border-radius: 7px;
+    /* head ka size tail se thoda bda */
+    transform: scale(1.15);
+}
+.food{
+    background-color: rgb(174, 64, 20);
+    border: .25vmin solid black;
+    border-radius: 8px ;
+
+
+}
+.snake{
+    background-color: darkmagenta;
+    border: .25vmin solid white;
+    border-radius: 12px;
+}
+#scoreBox{
+    font-family: "Anton", sans-serif;
+    position: absolute;
+    text-align: center;
+
+    
+    font-size: 34px;
+    font-weight: bolder;
+}
