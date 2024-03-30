@@ -1,0 +1,205 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: rgb(33, 111, 115);
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    
+}
+.container{
+     
+    width: 90%;
+    max-width: 420px;
+    
+}
+#heading{
+    color: whitesmoke;
+    opacity: 90%;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    text-align: center;
+    line-height: 1.5;
+}
+
+.display-cont{
+    position: relative;
+    /* kyonki baad mein nya content overlp kraana hai */
+    background-color: rgb(43, 57, 57);
+    border-radius: 1rem;
+    border-bottom: 0.35rem solid rgb(48, 25, 25);
+    margin: 1.2rem 0;
+    padding-top: 0.35rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.display{
+    width: 100%;
+    background-color: transparent;
+    padding: 1rem 0.8rem ;
+    color: rgb(187, 198, 28);
+    font-size: 1.5rem;
+    line-height: 30px;
+    letter-spacing: 1px;
+    font-weight: 600;
+    border: none;
+
+}
+/* to change text display ke andr jo placeholder */
+
+.display::placeholder{
+    color: rgb(206, 206, 41);
+    font-style: italic;
+    left: 1.5rem;
+    font-size: 1.5rem;
+    line-height: 20px;
+    opacity: 0.65;
+    transform: translateY(-10%);
+
+}
+.display-cont button{
+    position: absolute;
+    top: 50%;
+    right: 1.8rem;
+    transform: translateY(-50%);
+}
+.input-cont{
+    background-color: rgb(53, 71, 72);
+    border-radius: 1.3rem;
+    padding: 1.4rem;
+
+}
+.length-cont{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 1.5rem;
+    line-height: 40px;
+}
+#passlen{
+    color: aliceblue;
+    gap: 2rem;
+    line-height: 3.5rem;
+    
+}
+.length-cont p:nth-child(2){
+    /* mtlb parent ka 2nd child */
+    right: 2.5rem;
+    color:yellow ;
+    font-size: 1.5rem;
+}
+
+.Strength-Cont{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 1.5rem;
+    line-height: 40px;
+}
+.Strength-Cont p{
+    color: aliceblue;
+    font-size: 1.5rem;
+}
+.indicator{
+    height: 1.5rem;
+    width: 1.5rem;
+    border-radius: 50%;
+    color: antiquewhite;
+}
+.generateBtn{
+    width: 100%;
+    padding: 1rem 0;
+    background-color: rgb(42, 57, 57);
+    text-align: center;
+    border-radius: 0.75rem;
+    border-bottom: 0.45rem solid rgb(12, 15, 15);
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: rgb(174, 174, 6);
+    font-weight: 600;
+    font-size: 1.2rem;
+}
+.check{
+    display: flex;
+    align-items: center;
+    margin: 1rem 0;
+    gap: 1rem;
+}
+.check input{
+    appearance: none;
+    width: 20px;
+    height: 20px;
+    border: 2px solid rgb(8, 17, 17);
+    cursor: pointer;
+    position: relative;
+    border-radius: 0.35rem;
+}
+.check input:checked{
+    background-color: aqua;
+
+}
+.check input:checked::before{
+    content: ' ✔';
+    position: absolute;
+    color: black;
+    font-size: 1.02rem;
+    font-weight: bolder;
+    top:-10%;
+    left: 20%;
+    
+    
+}
+
+.check label{
+    font-size: 1.25rem;
+    color: azure;
+    letter-spacing: 1px;
+}
+
+.slider{
+    
+    appearance: none;
+    width: 100%;
+    border-radius: 1rem;
+    background-color: rgb(22, 44, 44);
+    height: 1.2rem;
+    cursor: pointer;
+    background-image: linear-gradient(var(--vb-violet),var(--vb-violet));
+    background-repeat: no-repeat;
+    border: none;
+}
+/* how to acces thnumb on slider  by pseudo Element Selector */
+
+.slider::-webkit-slider-thumb{
+    position: relative;
+    appearance: none;
+    height: 2rem;
+    width: 2rem;
+    border-radius: 50%;
+    background-color: rgb(218, 218, 17);
+    box-shadow: 0 0 10px 2px rgb(122, 122, 43);
+    
+}
+.slider:focus{
+    outline: 3px solid rgb(122, 122, 50);
+}
+.slider::-webkit-slider-thumb:hover{
+    background-color: black;
+    box-shadow: 0 0 20px 1 px rgb(147, 147, 87);
+}
+.copyurl{
+    
+    cursor: pointer;
+
+}
+.copyurl::after{
+    position: absolute
+    
+}
